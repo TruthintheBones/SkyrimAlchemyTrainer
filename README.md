@@ -4,8 +4,11 @@ Given CSV-based ingredient inventory, prints brewing instructions that will disc
 This program is intended to reduce the tedium of discovering ingredient effects in TES V: Skyrim. Chronic restarters, rejoice!
 
 The accompanying .CSV file saves your discovery progress and inventory. A row in the CSV file looks like this:
+
         Abecean_Longfin,0,Weakness_to_Frost,0,Fortify_Sneak,0,Weakness_to_Poison,0,Fortify_Restoration,0
+        
 ...which follows the scheme...
+
         Ingredient_name,number_in_inventory,effect_1_name,is_effect_1_known?,effect_2_name,is_effect_2_known?.... etc.
 
 Before running this program, manually update the CSV to reflect the current status of your Skyrim character's alchemy situation. In particular, update the inventory column to reflect your character's inventory of ingredients. This program is really designed for fresh characters, but if your character has done alchemy before, you may also manually record which effects of which ingredients your character already knows by changing the corresponding 0 to a 1, but that sounds MISERABLE, and is not encouraged. Instead, just allow the program to assume your character knows no ingredient effects. This will result in some wasted ingredients, of course, but the program will quickly catch up to your current progress.
